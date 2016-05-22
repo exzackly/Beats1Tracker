@@ -29,7 +29,7 @@
 				while($row = $result->fetch_array(MYSQL_ASSOC)) {
 					$resultArray[] = $row;
 				}
-				echo '<table class="resizer"><tr><td width="37%">';
+				echo '<table class="resizer"><tr><td id="artwork">';
 				echo '<img src="' . $resultArray[0]['artwork'] . '" alt="' . $resultArray[0]['title'] . '" height="250" width="250" align="right">' . "</td>";
 				echo '<td width="63%"><p class="resizer" style="font-size:3vmin; text-align:left;">';
 					echo $resultArray[0]['title'] . "<br><br>";
@@ -46,7 +46,7 @@
 				array_shift($resultArray);
 				echo '<table class="resizer">';
 				foreach ($resultArray as $row) {
-					echo '<tr><td width="37%" style="padding-top:30px;"><img src="' . $row['artwork'] . '" alt="' . $row['title'] . '" height="250" width="250" align="right">' . "</td>";
+					echo '<tr><td id="artwork" style="padding-top:30px;"><img src="' . $row['artwork'] . '" alt="' . $row['title'] . '" height="250" width="250" align="right">' . "</td>";
 					echo '<td width="63%"><p class="resizer" style="font-size:3vmin; text-align:left;">';
 						echo $row['title'] . "<br><br>";
 						echo $row['artist']. "<br><br>";

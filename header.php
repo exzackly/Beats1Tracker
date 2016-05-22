@@ -84,6 +84,9 @@ require_once("detect.php");
 				p.resizer {
 					max-width:70%;
 				}
+				#artwork {
+					width:37%;
+				}
 END;
 		} else if ($browser == 'mobile') {
 			echo <<<END
@@ -92,6 +95,9 @@ END;
 				}
 				p.resizer {
 					max-width:80%;
+				}
+				#artwork {
+					width:150%;
 				}
 END;
 		}
